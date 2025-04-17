@@ -1,0 +1,49 @@
+<%= render 'shared/navbar' %>
+
+<div class="container mt-5 pt-5">
+  <section class="hero-section text-center mb-5">
+    <h1>Alia Solovyeva</h1>
+    <p>Hi, my name is Alia and I am a freshman at Conn College.<br>
+      I am planning on majoring in Computer Science and minoring in Economics.</p>
+    <%= link_to 'View my CV', asset_path('AliaResume.pdf'), class: 'btn btn-primary mt-3', target: '_blank' %>
+
+  </section>
+
+  <section id="about" class="mb-5">
+    <div class="row align-items-center">
+      <div class="col-lg-5">
+        <%= image_tag 'main.jpg', class: 'img-fluid rounded', alt: 'Alia photo' %>
+      </div>
+      <div class="col-lg-7">
+        <h2>About Me</h2>
+        <p>I am Alia Solovyeva, studying Computer Science at Connecticut College.
+          I was born in Russia but spent most of my childhood in England, where I developed a deep 
+          appreciation for both literature and logic. Now studying Computer Science and Economics at Connecticut College, 
+          I am able to blend analytical thinking with creativity, and I am eager to explore the intersection of 
+          technology and financial systems. With a global perspective shaped by my diverse upbringing,
+          I aspire to innovate in the tech industry, bridging the gap between data and decision-making.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contactme" class="contact-section mb-5">
+    <h2>Contact Me</h2>
+    <p>Feel free to reach out! I'd love to hear from you.</p>
+
+    <form>
+      <div class="mb-3">
+        <label for="name" class="form-label">Full Name</label>
+        <input type="text" class="form-control" id="name" placeholder="Enter your name">
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email Address</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter your email">
+      </div>
+      <div class="mb-3">
+        <label for="message" class="form-label">Your Message</label>
+        <textarea class="form-control" id="message" rows="4" placeholder="Write your message"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Send Message</button>
+    </form>
+  </section>
+</div>
